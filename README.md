@@ -1,4 +1,5 @@
-# vim-hashpunk
+# vim-hazepunk
+
 A vim colorscheme based on pink neon
 
 ## Credits and References ##

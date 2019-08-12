@@ -1,6 +1,6 @@
-" Name:         hashpunk
-" Author:       abnt713
-" Maintainer:   abnt713
+" Name:         hazepunk
+" Author:       abnt713, Haze Booth
+" Maintainer:   Haze Booth
 " License:      MIT
 
 highlight clear
@@ -9,7 +9,7 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let g:colors_name = 'hashpunk-lapis'
+let g:colors_name = 'hazepunk'
 set background=dark
 
 " Dark Meadow Legacy
@@ -21,8 +21,9 @@ let s:Magenta2        =  ['165' , '#d700ff']
 let s:MediumOrchid1   =  ['207' , '#ff5faf']
 
 " Hashpunk
-let s:MainColor = ['110', '#875fff']
-let s:ComplementaryColor = ['111', '#8787ff']
+let s:MainColor = ['161', '#d7005f']
+let s:ComplementaryColor = ['162', '#d70087']
+let s:StringHighlgiht = ['224', '#ffd7d7']
 
 let s:Grey0 = ['16', '#000000']
 let s:Grey7 = ['233', '#121212']
@@ -58,7 +59,7 @@ endfunction
 "
 call s:highlight('Comment', s:Grey42, s:clear, s:italic)
 call s:highlight('Constant', s:MainColor, s:clear, s:none)
-call s:highlight('String', s:Grey93, s:clear, s:none)
+call s:highlight('String', s:StringHighlgiht, s:clear, s:none)
 call s:highlight('Character', s:Grey93, s:clear, s:none)
 call s:highlight('Number', s:Grey93, s:clear, s:none)      
 call s:highlight('Boolean', s:ComplementaryColor, s:clear, s:none)
@@ -97,7 +98,7 @@ call s:highlight('Todo', s:MainColor, s:clear, s:none)
 
 call s:highlight('Directory', s:Grey93, s:clear, s:bold)
 call s:highlight('CursorLine', s:MainColor, s:clear, s:bold)
-call s:highlight('MatchParen', s:MainColor, s:Grey93, s:none)
+call s:highlight('MatchParen', s:Grey93, s:Grey15, s:none)
 call s:highlight('ColorColumn', s:MainColor, s:Grey15, s:none)
 
 
